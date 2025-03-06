@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="changeMode">
+            <button id="Light">Light</button>
+            <button id="dark">Dark</button>
+        </div>
+
+        <h1>💱 Currency Converter</h1>
+        <form action="">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" placeholder="Enter Amount">
+            </div>
+
+            <div class="dropdown">
+                <img src="https://flagsapi.com/US/flat/64.png" id = "fromImg"/>
+                <div class="from">
+                    <p>From</p>
+                    <select name="from" id="from">
+                        <!-- <option value="INR">INR</option> -->
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+
+                <img id = "exg-img" src="exchange.png">
+
+                
+                <div class="to">
+                    <p>To</p>
+                    <select name="to" id="to">
+                        <option value="INR">INR</option>
+                        <!-- <option value="USD">USD</option> -->
+                    </select>
+                </div>
+                <img src="https://flagsapi.com/IN/flat/64.png" id ="toImg"/>
+            </div>
+
+
+            <div class="msg"></div>
+            <button class="last"type="submit" >Get</button>
+        </form>
+    </div>
+    <script src="coutryCodes.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
